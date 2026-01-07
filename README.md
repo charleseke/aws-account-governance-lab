@@ -154,10 +154,31 @@ This CloudFormation template deploys five essential AWS Config rules:
 - CloudTrail enabled check
 - S3 bucket public write protection check
 
+## 4. Security Hub Implementation -- Enable Security Hub and configure security standards for centralized security management
+### Step 4.1: Enable Security Hub
+1. Navigate to AWS Security Hub
+2. Click "Go to Security Hub"
+3. On the welcome page, click "Enable Security Hub"
+4. Select the following security standards:
+   - AWS Foundational Security Best Practices
+   - NIST 800-53
+5. Click "Enable Security Hub"
 
+### Step 4.2: Configure Security Hub Settings
+1. In Security Hub, click "Settings" in the left navigation pane
+2. Under "Configuration":
+   - Enable "Automatically enable new controls when added to standards"
+   - Enable "Enable Security Hub in new accounts automatically"
+3. Under "Integrations", enable the following:
+   - AWS IAM Access Analyzer
+   - AWS Config
+4. Click "Save"
 
-
-
+### Step 4.3: Review Security Hub Dashboard
+1. In Security Hub, click "Summary" in the left navigation pane
+2. Review your current security posture
+3. Note any critical or high severity findings for immediate remediation
+4. Click on "Insights" to review predefined security insights
 
 
 
