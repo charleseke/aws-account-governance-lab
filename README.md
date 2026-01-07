@@ -10,7 +10,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 - AWS Budgets
 
 ## Implementation
-1. **Identity Center and IAM Security** -- Configure AWS IAM Identity Center, enable MFA, and implement least privilege access with permission sets
+## 1. Identity Center and IAM Security -- Configure AWS IAM Identity Center, enable MFA, and implement least privilege access with permission sets
 ### Step 1.1: Enable MFA for Root User
 1. Sign in to the AWS Management Console as the root user
 2. In the navigation bar, click on your account name, then "Security credentials"
@@ -72,7 +72,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 5. For "Zone of trust", select "Current account"
 6. Click "Create analyzer"
 
-2. **Logging and Monitoring** -- Set up CloudTrail and CloudWatch for comprehensive logging and monitoring
+## 2. Logging and Monitoring -- Set up CloudTrail and CloudWatch for comprehensive logging and monitoring   
 ### Step 2.1: Configure CloudTrail
 1. Navigate to CloudTrail service
 2. Click "Create trail"
@@ -118,7 +118,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 15. Click "Next" and "Create alarm"
 16. Confirm the SNS subscription in your email
 
-3. **AWS Config and Compliance** -- Deploy AWS Config and configure compliance rules
+## 3. AWS Config and Compliance -- Deploy AWS Config and configure compliance rules
 ### Step 3.1: Enable AWS Config
 1. Navigate to AWS Config service
 2. Click "Get started" or "Settings" (if already configured)
