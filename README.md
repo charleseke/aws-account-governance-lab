@@ -8,3 +8,4 @@ Implement a security architecture that includes centralized logging with CloudTr
 - AWS Security Hub
 - AWS CloudTrail
 - AWS Budgets
+
