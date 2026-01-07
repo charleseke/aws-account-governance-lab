@@ -9,7 +9,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 5. AWS Budgets
 
 ## Implementation
-## 1. Identity Center and IAM Security -- Configure AWS IAM Identity Center, enable MFA, and implement least privilege access with permission sets
+### 1. Identity Center and IAM Security -- Configure AWS IAM Identity Center, enable MFA, and implement least privilege access with permission sets
 ### Step 1.1: Enable MFA for Root User
 1. Sign in to the AWS Management Console as the root user
 2. In the navigation bar, click on your account name, then "Security credentials"
@@ -71,7 +71,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 5. For "Zone of trust", select "Current account"
 6. Click "Create analyzer"
 
-## 2. Logging and Monitoring -- Set up CloudTrail and CloudWatch for comprehensive logging and monitoring   
+### 2. Logging and Monitoring -- Set up CloudTrail and CloudWatch for comprehensive logging and monitoring   
 ### Step 2.1: Configure CloudTrail
 1. Navigate to CloudTrail service
 2. Click "Create trail"
@@ -117,7 +117,7 @@ Implement a security architecture that includes centralized logging with CloudTr
 15. Click "Next" and "Create alarm"
 16. Confirm the SNS subscription in your email
 
-## 3. AWS Config and Compliance -- Deploy AWS Config and configure compliance rules
+### 3. AWS Config and Compliance -- Deploy AWS Config and configure compliance rules
 ### Step 3.1: Enable AWS Config
 1. Navigate to AWS Config service
 2. Click "Get started" or "Settings" (if already configured)
@@ -153,7 +153,7 @@ This CloudFormation template deploys five essential AWS Config rules:
 - CloudTrail enabled check
 - S3 bucket public write protection check
 
-## 4. Security Hub Implementation -- Enable Security Hub and configure security standards for centralized security management
+### 4. Security Hub Implementation -- Enable Security Hub and configure security standards for centralized security management
 ### Step 4.1: Enable Security Hub
 1. Navigate to AWS Security Hub
 2. Click "Go to Security Hub"
@@ -179,7 +179,15 @@ This CloudFormation template deploys five essential AWS Config rules:
 3. Note any critical or high severity findings for immediate remediation
 4. Click on "Insights" to review predefined security insights
 
-
+### 5. Cost Controls -- Implement AWS Budgets 
+### Step 5.1: Set up AWS Budgets
+1. Navigate to AWS Budgets (via AWS Cost Management)
+2. Click "Create budget"
+3. Select "Use a template" and choose "Monthly cost budget"
+4. Set a realistic budget amount based on your expected usage
+5. Configure alerts at 50%, 80%, and 100% of your budget
+6. Add email recipients for the alerts
+7. Click "Create budget"
 
 
 
