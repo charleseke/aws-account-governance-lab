@@ -9,3 +9,5 @@ Implement a security architecture that includes centralized logging with CloudTr
 - AWS CloudTrail
 - AWS Budgets
 
+## Implementation
+**Identity Center and IAM Security --** Configure AWS IAM Identity Center, enable MFA, and implement least privilege access with permission sets
