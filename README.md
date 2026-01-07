@@ -133,7 +133,26 @@ Implement a security architecture that includes centralized logging with CloudTr
 7. Skip adding rules for now (click "Next" without selecting any rules)
 8. Click "Confirm" to enable AWS Config
 
+### Step 3.2: Deploy Config Rules Using CloudFormation
 
+Now that you have AWS Config set up, you'll use CloudFormation to deploy a set of security rules:
+
+1. Navigate to the CloudFormation service
+2. Click "Create stack" > "With new resources (standard)"
+3. Under "Specify template":
+   - Select "Upload a template file"
+   - Click "Choose file" and select the `account-governance.yaml` template file 
+4. Click "Next"
+5. Enter a stack name (e.g., "config-security-rules")
+6. Click "Next", then "Next" again on the Configure stack options page
+7. Review the settings and click "Create stack"
+
+This CloudFormation template deploys five essential AWS Config rules:
+- IAM Password Policy check
+- Root account MFA check
+- IAM User MFA check
+- CloudTrail enabled check
+- S3 bucket public write protection check
 
 
 
